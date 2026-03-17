@@ -1,5 +1,5 @@
 // ═══════════════════════════════════════════
-//  Notion Training Quotation — Auto Pricing
+//  Notion Training Quotation — Auto Pricing (Myanmar)
 // ═══════════════════════════════════════════
 
 (function () {
@@ -9,15 +9,15 @@
   const PRICING = {
     'one-on-one': {
       price: 1000000,
-      duration: '1.5 Hours',
+      duration: '၁.၅ နာရီ',
       label: '1-on-1 Private Training',
       tier: ''
     },
     'group': [
-      { min: 2, max: 5,  price: 2000000, tier: '2–5 participants' },
-      { min: 6, max: 10, price: 3000000, tier: '6–10 participants' },
-      { min: 11, max: 20, price: 4000000, tier: '11–20 participants' },
-      { min: 21, max: 50, price: 5000000, tier: '21+ participants' },
+      { min: 2, max: 5,  price: 2000000, tier: '၂–၅ ဦး' },
+      { min: 6, max: 10, price: 3000000, tier: '၆–၁၀ ဦး' },
+      { min: 11, max: 20, price: 4000000, tier: '၁၁–၂၀ ဦး' },
+      { min: 21, max: 50, price: 5000000, tier: '၂၁+ ဦး' },
     ]
   };
 
@@ -54,7 +54,6 @@
     function step(now) {
       const elapsed = now - startTime;
       const progress = Math.min(elapsed / duration, 1);
-      // Ease out cubic
       const eased = 1 - Math.pow(1 - progress, 3);
       const value = Math.round(current + diff * eased);
       el.textContent = formatNumber(value);
@@ -72,7 +71,6 @@
         return tier;
       }
     }
-    // Over 50 — use max tier
     return PRICING.group[PRICING.group.length - 1];
   }
 
@@ -95,9 +93,9 @@
     } else {
       const tier = getGroupTier(groupSize);
       sessionLabel.textContent = 'Group Training Session';
-      durationLabel.textContent = '2 Hours';
+      durationLabel.textContent = '၂ နာရီ';
       participantsRow.style.display = 'flex';
-      participantsLabel.textContent = groupSize;
+      participantsLabel.textContent = groupSize + ' ဦး';
       priceTier.textContent = tier.tier;
       animatePrice(tier.price);
     }
@@ -116,7 +114,6 @@
 
       if (currentType === 'group') {
         groupSizeField.style.display = 'block';
-        // Trigger reflow for animation
         groupSizeField.offsetHeight;
         groupSizeField.classList.remove('hidden');
         groupSizeField.classList.add('visible');
@@ -179,6 +176,29 @@
   themeToggle.addEventListener('click', () => {
     isDark = !isDark;
     applyTheme();
+  });
+
+  // ── Copy to clipboard (payment numbers) ──
+  document.querySelectorAll('[data-copy]').forEach(el => {
+    el.addEventListener('click', () => {
+      const text = el.getAttribute('data-copy');
+      navigator.clipboard.writeText(text).then(() => {
+        el.classList.add('copied');
+        setTimeout(() => el.classList.remove('copied'), 1500);
+      }).catch(() => {
+        // fallback
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.position = 'fixed';
+        ta.style.opacity = '0';
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        document.body.removeChild(ta);
+        el.classList.add('copied');
+        setTimeout(() => el.classList.remove('copied'), 1500);
+      });
+    });
   });
 
   // ── Init ───────────────────────────────────
