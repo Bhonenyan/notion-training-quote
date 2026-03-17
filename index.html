@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Notion Private Training — Quotation | Notion By Bhone</title>
+<meta name="description" content="Get an instant quotation for Notion Private Training via Zoom. 1-on-1 or group sessions covering Notion basics to advanced AI-powered automation.">
+
+<!-- Fonts -->
+<link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="./base.css">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="brand">
+        <svg class="logo" width="32" height="32" viewBox="0 0 32 32" fill="none" aria-label="Notion By Bhone logo">
+          <rect width="32" height="32" rx="6" fill="currentColor"/>
+          <path d="M8 8h10l6 6v10H8V8z" fill="var(--color-bg)" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M18 8v6h6" stroke="var(--color-bg)" stroke-width="1.5" fill="none"/>
+          <rect x="11" y="15" width="10" height="1.5" rx="0.75" fill="currentColor"/>
+          <rect x="11" y="19" width="7" height="1.5" rx="0.75" fill="currentColor"/>
+        </svg>
+        <span class="brand-name">Notion By Bhone</span>
+      </div>
+      <button data-theme-toggle aria-label="Switch to dark mode">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="hero-label">Notion Private Training via Zoom</p>
+        <h1 class="hero-title">Master Notion<br>for Your Business</h1>
+        <p class="hero-desc">From fundamentals to AI-powered automation — a comprehensive training tailored to your team.</p>
+      </div>
+    </section>
+
+    <!-- Quotation Builder -->
+    <section class="quote-builder" id="quote">
+      <div class="container">
+        <div class="quote-card">
+          <h2 class="section-label">Instant Quotation</h2>
+
+          <!-- Session Type -->
+          <div class="field-group">
+            <label class="field-label">Session Type</label>
+            <div class="toggle-group" role="radiogroup" aria-label="Session type">
+              <button class="toggle-btn active" role="radio" aria-checked="true" data-type="one-on-one">
+                <span class="toggle-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="4"/><path d="M6 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/></svg>
+                </span>
+                1-on-1
+              </button>
+              <button class="toggle-btn" role="radio" aria-checked="false" data-type="group">
+                <span class="toggle-icon">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="9" cy="7" r="3"/><path d="M3 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="17" cy="9" r="2.5"/><path d="M21 21v-1.5a3 3 0 0 0-3-3h-.5"/></svg>
+                </span>
+                Group
+              </button>
+            </div>
+          </div>
+
+          <!-- Group Size (hidden by default) -->
+          <div class="field-group group-size-field" id="groupSizeField" style="display:none;">
+            <label class="field-label" for="groupSize">Number of Participants</label>
+            <div class="stepper">
+              <button class="stepper-btn" id="decreaseBtn" aria-label="Decrease participants">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+              <input type="number" id="groupSize" class="stepper-input" value="5" min="2" max="50" aria-label="Number of participants">
+              <button class="stepper-btn" id="increaseBtn" aria-label="Increase participants">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+              </button>
+            </div>
+            <p class="size-hint" id="sizeHint">5–10 participants</p>
+          </div>
+
+          <!-- Divider -->
+          <div class="quote-divider"></div>
+
+          <!-- Summary -->
+          <div class="quote-summary">
+            <div class="summary-row">
+              <span class="summary-label">Session</span>
+              <span class="summary-value" id="sessionLabel">1-on-1 Private Training</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Duration</span>
+              <span class="summary-value" id="durationLabel">1.5 Hours</span>
+            </div>
+            <div class="summary-row">
+              <span class="summary-label">Platform</span>
+              <span class="summary-value">Zoom (Live)</span>
+            </div>
+            <div class="summary-row" id="participantsRow" style="display:none;">
+              <span class="summary-label">Participants</span>
+              <span class="summary-value" id="participantsLabel">5</span>
+            </div>
+          </div>
+
+          <!-- Price -->
+          <div class="price-block">
+            <p class="price-label">Total Fee</p>
+            <p class="price-amount" id="priceAmount">
+              <span class="price-number" id="priceNumber">1,000,000</span>
+              <span class="price-currency">MMK</span>
+            </p>
+            <p class="price-tier" id="priceTier"></p>
+          </div>
+
+          <!-- CTA -->
+          <a href="https://m.me/NotionByBhone" target="_blank" rel="noopener noreferrer" class="cta-btn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.2 5.42 3.15 7.15V22l3.03-1.67c.86.24 1.78.37 2.82.37 5.64 0 10-3.93 10-9.3C22 6.13 17.64 2 12 2z"/><path d="M13.03 14.41l-2.55-2.73L5.7 14.5l5.25-5.58 2.61 2.73 4.72-3.08-5.25 5.84z" fill="var(--color-bg)"/></svg>
+            Contact via Messenger
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Training Outline -->
+    <section class="outline" id="outline">
+      <div class="container">
+        <h2 class="section-label">Training Outline</h2>
+        <p class="outline-desc">8 comprehensive modules covering everything from Notion basics to building AI agents for your business operations.</p>
+
+        <div class="modules-grid">
+          <div class="module-card">
+            <span class="module-num">01</span>
+            <h3>Introduction to Notion</h3>
+            <p>Overview of Notion's capabilities and how it transforms business workflows.</p>
+          </div>
+          <div class="module-card">
+            <span class="module-num">02</span>
+            <h3>Notion Fundamentals</h3>
+            <p>Pages, blocks, workspace structure, and core building concepts.</p>
+          </div>
+          <div class="module-card">
+            <span class="module-num">03</span>
+            <h3>Database Mastery</h3>
+            <p>Properties, views, filters, relations, rollups, and formulas.</p>
+          </div>
+          <div class="module-card">
+            <span class="module-num">04</span>
+            <h3>Personal Systems</h3>
+            <p>Task management, knowledge base, habit tracking, and personal dashboards.</p>
+          </div>
+          <div class="module-card">
+            <span class="module-num">05</span>
+            <h3>Team Systems & Publishing</h3>
+            <p>Collaboration, permissions, team wikis, and Notion Sites.</p>
+          </div>
+          <div class="module-card">
+            <span class="module-num">06</span>
+            <h3>Advanced Automation</h3>
+            <p>Buttons, automations, recurring tasks, and workflow triggers.</p>
+          </div>
+          <div class="module-card">
+            <span class="module-num">07</span>
+            <h3>AI-Powered Operations</h3>
+            <p>Notion AI features, AI-assisted content, and smart database operations.</p>
+          </div>
+          <div class="module-card">
+            <span class="module-num">08</span>
+            <h3>Building 24/7 AI Agents</h3>
+            <p>Create AI agents that automate business tasks around the clock.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- What's Included -->
+    <section class="included" id="included">
+      <div class="container">
+        <h2 class="section-label">What's Included</h2>
+        <div class="included-grid">
+          <div class="included-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <div>
+              <h3>Live Zoom Session</h3>
+              <p>Real-time training with screen sharing and Q&A</p>
+            </div>
+          </div>
+          <div class="included-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/><polyline points="14 2 14 8 20 8"/></svg>
+            <div>
+              <h3>Templates & Materials</h3>
+              <p>Ready-to-use Notion templates and training resources</p>
+            </div>
+          </div>
+          <div class="included-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div>
+              <h3>Session Recording</h3>
+              <p>Full replay access so you never miss a detail</p>
+            </div>
+          </div>
+          <div class="included-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+            <div>
+              <h3>7-Day Support</h3>
+              <p>Post-training chat support for any follow-up questions</p>
+            </div>
+          </div>
+          <div class="included-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            <div>
+              <h3>Certificate</h3>
+              <p>Certificate of completion for all participants</p>
+            </div>
+          </div>
+          <div class="included-item">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            <div>
+              <h3>Hands-on Exercises</h3>
+              <p>Practice during the session with guided exercises</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-inner">
+        <p class="footer-brand">Notion By Bhone</p>
+        <div class="footer-links">
+          <a href="https://facebook.com/NotionByBhone" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.youtube.com/@BhoneNyanSoe" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://www.linkedin.com/in/bhone-nyan-soe-41076126a" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        <p class="footer-attr">
+          <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer">Created with Perplexity Computer</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./app.js"></script>
+</body>
+</html>
