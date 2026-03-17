@@ -721,6 +721,8 @@
   cursor: pointer;
   position: relative;
   display: inline-block;
+  text-decoration: none;
+  border-bottom: none;
   transition: color 150ms var(--ease);
 }
 
@@ -930,18 +932,7 @@
   color: var(--color-text);
 }
 
-.footer-attr {
-  margin-top: var(--space-2);
-}
 
-.footer-attr a {
-  font-size: var(--text-xs);
-  color: var(--color-text-faint);
-  text-decoration: none;
-}
-.footer-attr a:hover {
-  color: var(--color-text-muted);
-}
 
 /* ═══════════════════════════════════════════
    Mobile
